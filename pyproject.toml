@@ -1,0 +1,23 @@
+[project]
+name = "beon-tech-interview"
+version = "0.1.0"
+description = "BEON.tech live coding interview scaffold: FastAPI + Claude"
+authors = [
+    { name = "Pedro Lima", email = "240497750+pedrohnk77@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.6.0",
+    "fastapi>=0.162.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
