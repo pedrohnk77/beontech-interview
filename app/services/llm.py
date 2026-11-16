@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL = os.getenv("ANTHROPIC_MODEL", "claude-opus-5-5")
+MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
 
 # Reads ANTHROPIC_API_KEY from the environment / .env.
 client = anthropic.Anthropic()
